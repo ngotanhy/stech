@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import BookChairReducer from "./reducers/BookChairReducer";
+import BookingTicketReducer from "./reducers/BookingTicketReducer";
 
 export const store = configureStore({
     reducer: {
-        BookChairReducer: BookChairReducer
+        BookingTicketReducer: BookingTicketReducer
     }
 })
 

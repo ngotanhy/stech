@@ -8,7 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 import App from './App'
-import BookChair from './pages/bookChair/BookChair'
+import BookingTicket from './pages/bookingTicket/BookingTicket'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path='' element={<App />}>
-              <Route path='/bookChair' element={<BookChair/>}></Route>
+              <Route path='/bookingticket' element={<BookingTicket/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
