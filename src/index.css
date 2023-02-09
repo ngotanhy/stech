@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.subContainer {
+  width: 1370px;
+  margin: 0 auto;
+ 
+}
 
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+/* body {
+  height: 10000px;
+} */
