@@ -19,7 +19,7 @@ const itemMusic = () => {
     let list = []
     for (let i = 0; i < 3; i++) {
         if (i < 3) {
-            list.push([<li className='border-r-2' key={i}>
+            list.push([<li className='border-r-2 py-4' key={i}>
                 <div className='flex justify-start gap-3 text-base font-semibold items-center'>
                     <BsHeadphones />
                     <h2 className=''>Xung đột vì nuôi chó, mèo ở chung cư</h2>
@@ -29,7 +29,7 @@ const itemMusic = () => {
                 </p>
             </li>])
         } else {
-            list.push([<li className="border-0" key={i}>
+            list.push([<li className="border-0 py-4" key={i}>
                 <div className='flex justify-start gap-3 text-base font-semibold items-center'>
                     <BsHeadphones />
                     <h2 className=''>Xung đột vì nuôi chó, mèo ở chung cư</h2>
@@ -50,7 +50,7 @@ export default function SectionPodcast() {
         <div className='container'>
             <div className='mt-4'>
                 <ListItemTiltle arrayTitle={arrayTitle1} underline={1} />
-                <div className='grid grid-cols-2 gap-2 border-b-2 pb-4'>
+                <div className='grid grid-cols-2 gap-2 border-b-2 pb-4 py-4'>
                     <div className='border-r-2 pr-2'> {itemImg1()} </div>
                     <div className='ml-2'> {itemImg1()} </div>
                 </div>

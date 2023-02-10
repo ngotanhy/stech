@@ -10,6 +10,7 @@ import SectionNext3 from './components/SectionNext3';
 import SectionNext4 from './components/SectionNext4';
 import SectionPhoto from './components/SectionPhoto';
 import SectionPodcast from './components/SectionPodcast';
+import SectionSpotlight from './components/SectionSpotlight';
 import SectionTopic from './components/SectionTopic';
 import SectionVideo from './components/SectionVideo';
 import TopStory from './components/TopStory';
@@ -30,6 +31,7 @@ function App() {
       <SectionNext2 />
       <SectionNext3 />
       <SectionPhoto/>
+      <SectionSpotlight/>
       <SectionNext4/>
       <Footer />
     </div>

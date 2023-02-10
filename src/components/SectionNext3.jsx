@@ -7,6 +7,7 @@ import img4 from '../assets/img/img4.png';
 import ItemNews from './ItemNews'
 import ListItemTiltle from './ListItemTiltle'
 import { FcNext, FcPrevious } from "react-icons/fc";
+import panner2 from "../assets/img/pannner2.png";
 
 const arrayTitle1 = ["Tâm sự", "Chuyên gia gỡ rối", "Hẹn hò"]
 const arrayTitle2 = ["Ý kiến"]
@@ -23,14 +24,10 @@ const settings = {
 export default function SectionNext3() {
   const slider = useRef();
 
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
-
   return (
     <div className='container'>
       <div className='py-4 '>
-        <div className='grid grid-cols-3 gap-2 py-2 border-b-2 py-4 '>
+        <div className='grid grid-cols-3 gap-2 border-b-2 py-4 '>
           <div className='col-span-2 border-r-2 pr-4'>
             <ListItemTiltle arrayTitle={arrayTitle1} underline={1} />
             <div className='grid grid-cols-2 py-3 gap-3 border-b-2 pb-7'>
@@ -97,7 +94,9 @@ export default function SectionNext3() {
                 </Carousel>
               </div>
             </div>
-
+            <div className='px-4 py-4'>
+               <img src={panner2} alt="panner" className='w-[300px] h-[600px]' />
+            </div>
 
           </div>
         </div>

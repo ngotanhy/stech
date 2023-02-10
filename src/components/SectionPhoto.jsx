@@ -1,23 +1,7 @@
 import React, { useRef } from 'react'
 import ListItemTiltle from './ListItemTiltle'
 
-
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-
-import "swiper/css/pagination";
-
-import img4 from "../assets/img/img4.png"
-import ItemNews from './ItemNews';
-
-import { FcNext, FcPrevious } from 'react-icons/fc';
-
-
-import { Pagination } from "swiper";
+import panner from "../assets/img/panner.png"
 
 
 export default function SectionPhoto() {
@@ -54,6 +38,9 @@ export default function SectionPhoto() {
                         <SwiperSlide>Slide 4</SwiperSlide>
                     </Swiper>
                 </div> */}
+                <button className=''>
+                <img src={panner} alt='img' className='w-full h-full'/>
+            </button>
             </div>
         </div>
     )

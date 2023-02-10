@@ -18,7 +18,7 @@ export default function Footer() {
 
     return (
         <div className="container">
-            <div className="border-t-2 border-b-2 py-5">
+            <div className="border-t-4 border-b-2 py-5">
                 <div className="grid grid-cols-4 ">
                     <div className="col-span-3 ">
                         <div className="grid grid-cols-5 gap-2">
