@@ -26,7 +26,7 @@ const ItemContent = (arrayTitle) => {
 export default function SectionContent() {
     return (
         <div className='container'>
-            <div className='flex justify-around gap-4 py-5'>
+            <div className='flex justify-around gap-4 py-5 border-b-2'>
                 <div className='border-r-2 pr-5'>{ItemContent(arrayTitle1)}</div>
                 <div className=' border-r-2 flex justify-center pr-5'>{ItemContent(arrayTitle2)}</div>
                 <div className='flex justify-end '>{ItemContent(arrayTitle3)}</div>

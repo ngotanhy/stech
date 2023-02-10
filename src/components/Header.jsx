@@ -52,7 +52,7 @@ export default function Header() {
                     </div>
                 </nav>
             </div>
-            <div className={scroll>25 ?'border-b-2 border-t-2 fixed w-full top-0 left-0 scroll-smooth bg-white':'border-b-2 border-t-2'}>
+            <div className={scroll>25 ?'border-b-2 border-t-2 fixed w-full top-0 left-0 scroll-smooth bg-white z-20':'border-b-2 border-t-2'}>
                 <div className="subContainer ">
                     <div className="flex items-center justify-around text-sm h-14">
                         <HiHome className='bg-slate-400 text-2xl rounded-lg p-1' />

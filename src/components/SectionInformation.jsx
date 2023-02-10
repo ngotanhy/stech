@@ -1,7 +1,7 @@
 import React from 'react'
 import img4 from '../assets/img/img4.png';
 import img5 from '../assets/img/img5.png';
-import ItemSectionInfor from './ItemSectionInfor';
+import ItemNews from './ItemNews';
 import ListItemTiltle from './ListItemTiltle';
 
 // const arryContent={
@@ -15,8 +15,8 @@ export default function SectionInformation() {
         <div className="container ">
             <div className="grid grid-cols-8 mt-6 border-b-2 py-4">
                 <div className="col-span-3 border-r-2">
-                    <ItemSectionInfor img={img4} title="24 chiến sĩ, nhân viên y tế Việt Nam sang Thổ Nhĩ Kỳ cứu nạn" content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay bay sang Thổ Nhĩ Kỳ hỗ trợ tìm kiếm nạn nhân mắc kẹt sau trận động đất." comment="70"/>
-                    <ItemSectionInfor title={"Vụ tham ô hơn 86 tỷ đồng ở ĐH Bách khoa Đà Nẵng bị lộ tẩy từ đâu?"} content={"ĐÀ NẴNGTừ chậm tiền lương cho cán bộ viên chức và chi trả học bổng sinh viên, Trường ĐH Bách khoa Đà Nẵng rà soát và phát hiện mất hơn 86 tỷ đồng "} comment={77}/>
+                    <ItemNews img={img4} title="24 chiến sĩ, nhân viên y tế Việt Nam sang Thổ Nhĩ Kỳ cứu nạn" content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay bay sang Thổ Nhĩ Kỳ hỗ trợ tìm kiếm nạn nhân mắc kẹt sau trận động đất." comment="70"/>
+                    <ItemNews title={"Vụ tham ô hơn 86 tỷ đồng ở ĐH Bách khoa Đà Nẵng bị lộ tẩy từ đâu?"} content={"ĐÀ NẴNGTừ chậm tiền lương cho cán bộ viên chức và chi trả học bổng sinh viên, Trường ĐH Bách khoa Đà Nẵng rà soát và phát hiện mất hơn 86 tỷ đồng "} comment={77}/>
                 </div>
                 <div className="col-span-5 pl-3 text-sm pb-3">
                     <ListItemTiltle arrayTitle={arrayTitle1} underline={1}/>

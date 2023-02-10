@@ -10,8 +10,8 @@ const renderListVideo=()=>{
      list.push([ <div className='grid grid-cols-2 gap-3 border-b-2 pb-2'>
      <button className="">
          <video width="100%" controls className='relative -z-10'>
-             <source src="mov_bbb.mp4" type="video/mp4" />
-             <source src="mov_bbb.ogg" type="video/ogg" />
+             <source src="" type="video/mp4" />
+             <source src="" type="video/ogg" />
              Your browser does not support HTML video.
          </video>
      </button>
@@ -46,8 +46,8 @@ export default function SectionVideo() {
                         <div className='grid grid-cols-2 gap-3 border-b-2 pb-2'>
                             <button className="">
                                 <video width="100%" controls className='relative -z-10'>
-                                    <source src="mov_bbb.mp4" type="video/mp4" />
-                                    <source src="mov_bbb.ogg" type="video/ogg" />
+                                    <source src="" type="video/mp4" />
+                                    <source src="" type="video/ogg" />
                                     Your browser does not support HTML video.
                                 </video>
                             </button>
