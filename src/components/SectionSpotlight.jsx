@@ -13,12 +13,14 @@ import { BsClock } from 'react-icons/bs';
 import ItemNews from './ItemNews';
 import CarouselItem from './CarouselItem';
 import panner2 from "../assets/img/pannner2.png";
+import CarouselNoButton from './CarouselNoButton';
 
 const settings = {
   dots: false,
   slidesToShow: 2,
   slidesToScroll: 1,
 };
+
 const settings1 = {
   dots: true,
   slidesToShow: 1,
@@ -43,56 +45,6 @@ const itemInfographics = (img) => {
   </div>
 }
 
-
-const renderListXemnhieu = () => {
-  let list = []
-  for (let i = 0; i < 8; i++) {
-    list.push([
-      <div className='flex gap-3 '>
-        <h2 className='text-5xl font-semibold'>{i + 1}</h2>
-        <p className='text-base'>Thông điệp từ những lần xuất hiện của con gái ông Kim Jong-un </p>
-      </div>
-    ])
-  }
-  return list;
-}
-
-// const renderInfo=()=>{
-//   return <div className=''>
-//      <img src="" alt="" className=''/>
-//      <div className=''>
-//        <h2 className='test-base font-semibold'>
-
-//        </h2>
-//        <p className='test-sm'></p>
-//      </div>
-//   </div>
-// }
-
-const CarouselRender=()=>{
-  return <Carousel {...settings1}>
-  <div>
-    <ItemNews img={img4} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay ." />
-    <ItemNews img={img4} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay ." />
-  </div>
-  <div>
-    <ItemNews img={img45} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-    <ItemNews img={img4} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-  </div>
-  <div>
-    <ItemNews img={img46} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-    <ItemNews img={img45} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-  </div>
-  <div>
-    <ItemNews img={img4} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-    <ItemNews img={img46} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-  </div>
-  <div>
-    <ItemNews img={img45} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-    <ItemNews img={img4} content="Đoàn biệt phái gồm 24 chiến sĩ cứu hộ và nhân viên y tế 22h hôm nay " />
-  </div>
-</Carousel>
-}
 
 export default function SectionSpotlight() {
   const slider = useRef();
@@ -201,9 +153,9 @@ export default function SectionSpotlight() {
 
         </div>
       </div>
-      <div className='grid grid-cols-2'>
-        <div className=''>{CarouselRender()}</div>
-        <div className=''>{CarouselRender()}</div>
+      <div className='grid grid-cols-2 py-4 gap-4'>
+        <div className=''><CarouselNoButton/></div>
+        <div className=''><CarouselNoButton/></div>
       </div>
     </div >
   )

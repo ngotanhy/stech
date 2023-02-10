@@ -1,8 +1,19 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from "react";
 import ListItemTiltle from './ListItemTiltle'
 
 import panner from "../assets/img/panner.png"
 
+
+
+// const renderItem=()=>{
+//     return <div className="flex justify-start">
+//     <img src={img4} alt='img' className='w-[500px] h-[300px]' />
+//     <div className="">
+//         <h2 className='text-xl font-semibold flex justify-start'>Dùng tia vũ trụ 'quét' tường thành 700 năm</h2>
+//         <p className='text-xs'>Các nhà nghiên cứu Trung Quốc phát hiện những đoạn có mật độ bất thường trên tường thành nhà Minh do hoàng đế Chu Nguyên Chương xây dựng. </p>
+//     </div>
+//   </div>
+//   }
 
 export default function SectionPhoto() {
 
@@ -23,24 +34,30 @@ export default function SectionPhoto() {
                         ><FcNext />
                         </button>
                     </div>
-                </div>
-                <div className="" >
+                </div> */}
+                {/* <div className="" >
                     <Swiper
-                    direction={"vertical"}
-                    modules={[Pagination]}
-                    pagination={{
-                        clickable: true,
-                      }}
+                        direction={"vertical"}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Pagination]}
+                        className="mySwiper"
                     >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
+                           <SwiperSlide>
+                {renderItem()}
+            </SwiperSlide>
+            <SwiperSlide>
+                {renderItem()}
+            </SwiperSlide>
+            <SwiperSlide>
+                {renderItem()}
+            </SwiperSlide>
                     </Swiper>
                 </div> */}
                 <button className=''>
-                <img src={panner} alt='img' className='w-full h-full'/>
-            </button>
+                    <img src={panner} alt='img' className='w-full h-full' />
+                </button>
             </div>
         </div>
     )

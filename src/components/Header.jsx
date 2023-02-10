@@ -10,12 +10,15 @@ import { FiMenu } from "react-icons/fi";
 import useScroll from '../Hooks/UseScroll';
 
 
-export default function Header() {
+export default function Header({ isOpen, setIsOpen }) {
     const { Search } = Input;
     const arrayListNav = ["Thời sự", "Góc nhìn", "Thế giới", "Videos", "Podcasts", "Kinh doanh", "Khoa học", "Giải trí", "Thể thao", "Pháp luật", "Giáo dục", "Sức khỏe", "Đời sống", "Du lịch", "Số hóa", "Xe", "Ý kiến", "Tâm sự", "Hài"];
 
     const scroll= useScroll();
 
+    const toggleNav = () => {
+        setIsOpen(!isOpen);
+      }
 
     return (
         <div className='relative '>
@@ -61,7 +64,9 @@ export default function Header() {
                                 <a href="#">{item}</a>
                             </div>
                         })}
-                        <button className="flex items-center justify-center text-slate-400  ">
+                        <button className="flex items-center justify-center text-slate-400  "
+                           onClick={toggleNav}
+                           >
                             <div className="pr-2 font-bold">Tất cả</div>
                             <FiMenu />
                         </button>

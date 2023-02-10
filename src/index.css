@@ -10,10 +10,39 @@
  
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 .container {
   width: 1130px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* font-size: 18px; */
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+ .swiper-slide img {
+  display: block;
+  width: 260px;
+  height: 156px;
+  object-fit: cover;
+} 
 

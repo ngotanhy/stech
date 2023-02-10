@@ -12,6 +12,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
+
 export default function CarouselItem() {
   const slider = useRef();
 
